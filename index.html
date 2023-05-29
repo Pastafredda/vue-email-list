@@ -13,7 +13,7 @@
     <div id="app">
         <div class="container">
             <ul>
-                <li v-for="keyMail in email">{{keyMail}}</li>
+                <li v-for="keyMail in emailContainer" v-if="emailContainer.length === email">{{keyMail}}</li>
             </ul>
         </div>
 
